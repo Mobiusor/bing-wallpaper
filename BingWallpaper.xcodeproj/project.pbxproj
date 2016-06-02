@@ -7,12 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		034E5C332A9AFDE047613FB4 /* Pods_BingWallpaperTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E7824848B9693C6153D4A89 /* Pods_BingWallpaperTests.framework */; };
 		3290AEB21CFF1A4000F2C945 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3290AEB11CFF1A4000F2C945 /* AppDelegate.swift */; };
 		3290AEB41CFF1A4000F2C945 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3290AEB31CFF1A4000F2C945 /* ViewController.swift */; };
 		3290AEB61CFF1A4000F2C945 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3290AEB51CFF1A4000F2C945 /* Assets.xcassets */; };
 		3290AEB91CFF1A4000F2C945 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3290AEB71CFF1A4000F2C945 /* Main.storyboard */; };
 		3290AEC41CFF1A4000F2C945 /* BingWallpaperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3290AEC31CFF1A4000F2C945 /* BingWallpaperTests.swift */; };
 		3290AECF1CFF1A4000F2C945 /* BingWallpaperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3290AECE1CFF1A4000F2C945 /* BingWallpaperUITests.swift */; };
+		3290AEDD1CFF1AEB00F2C945 /* MainApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3290AEDC1CFF1AEB00F2C945 /* MainApp.swift */; };
+		3290AEE21CFF1BF200F2C945 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3290AEDE1CFF1BF200F2C945 /* Constants.swift */; };
+		3290AEE31CFF1BF200F2C945 /* DataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3290AEDF1CFF1BF200F2C945 /* DataFetcher.swift */; };
+		3290AEE41CFF1BF200F2C945 /* WallpaperInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3290AEE01CFF1BF200F2C945 /* WallpaperInfo.swift */; };
+		3290AEE71CFF284C00F2C945 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3290AEE61CFF284C00F2C945 /* Log.swift */; };
+		3290AEEF1CFF465E00F2C945 /* PreferenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3290AEEE1CFF465E00F2C945 /* PreferenceViewController.swift */; };
+		644988DCFBEBDDB3717286F9 /* Pods_BingWallpaper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 442E6969B290CABD88DDC67A /* Pods_BingWallpaper.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0614D972D6F2B24983FEF6BE /* Pods-BingWallpaper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BingWallpaper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BingWallpaper/Pods-BingWallpaper.debug.xcconfig"; sourceTree = "<group>"; };
 		3290AEAE1CFF1A4000F2C945 /* BingWallpaper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BingWallpaper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3290AEB11CFF1A4000F2C945 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3290AEB31CFF1A4000F2C945 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -45,6 +54,17 @@
 		3290AECA1CFF1A4000F2C945 /* BingWallpaperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BingWallpaperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3290AECE1CFF1A4000F2C945 /* BingWallpaperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BingWallpaperUITests.swift; sourceTree = "<group>"; };
 		3290AED01CFF1A4000F2C945 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3290AEDC1CFF1AEB00F2C945 /* MainApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainApp.swift; sourceTree = "<group>"; };
+		3290AEDE1CFF1BF200F2C945 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		3290AEDF1CFF1BF200F2C945 /* DataFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataFetcher.swift; sourceTree = "<group>"; };
+		3290AEE01CFF1BF200F2C945 /* WallpaperInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WallpaperInfo.swift; sourceTree = "<group>"; };
+		3290AEE61CFF284C00F2C945 /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		3290AEEE1CFF465E00F2C945 /* PreferenceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferenceViewController.swift; sourceTree = "<group>"; };
+		442E6969B290CABD88DDC67A /* Pods_BingWallpaper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BingWallpaper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E7824848B9693C6153D4A89 /* Pods_BingWallpaperTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BingWallpaperTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		86D460D10995C691FFF66330 /* Pods-BingWallpaper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BingWallpaper.release.xcconfig"; path = "Pods/Target Support Files/Pods-BingWallpaper/Pods-BingWallpaper.release.xcconfig"; sourceTree = "<group>"; };
+		9BCE9BDE716C8FE4AA4F3A19 /* Pods-BingWallpaperTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BingWallpaperTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BingWallpaperTests/Pods-BingWallpaperTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D8A9FE5B2F8ED9D5CFC39448 /* Pods-BingWallpaperTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BingWallpaperTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BingWallpaperTests/Pods-BingWallpaperTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				644988DCFBEBDDB3717286F9 /* Pods_BingWallpaper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				034E5C332A9AFDE047613FB4 /* Pods_BingWallpaperTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +101,8 @@
 				3290AEC21CFF1A4000F2C945 /* BingWallpaperTests */,
 				3290AECD1CFF1A4000F2C945 /* BingWallpaperUITests */,
 				3290AEAF1CFF1A4000F2C945 /* Products */,
+				DBA623163B2F99480ACF8314 /* Pods */,
+				36783C5B063CACC4CB66C966 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,11 +119,17 @@
 		3290AEB01CFF1A4000F2C945 /* BingWallpaper */ = {
 			isa = PBXGroup;
 			children = (
+				3290AEDE1CFF1BF200F2C945 /* Constants.swift */,
+				3290AEDF1CFF1BF200F2C945 /* DataFetcher.swift */,
+				3290AEE01CFF1BF200F2C945 /* WallpaperInfo.swift */,
 				3290AEB11CFF1A4000F2C945 /* AppDelegate.swift */,
 				3290AEB31CFF1A4000F2C945 /* ViewController.swift */,
 				3290AEB51CFF1A4000F2C945 /* Assets.xcassets */,
 				3290AEB71CFF1A4000F2C945 /* Main.storyboard */,
 				3290AEBA1CFF1A4000F2C945 /* Info.plist */,
+				3290AEDC1CFF1AEB00F2C945 /* MainApp.swift */,
+				3290AEE61CFF284C00F2C945 /* Log.swift */,
+				3290AEEE1CFF465E00F2C945 /* PreferenceViewController.swift */,
 			);
 			path = BingWallpaper;
 			sourceTree = "<group>";
@@ -122,6 +152,26 @@
 			path = BingWallpaperUITests;
 			sourceTree = "<group>";
 		};
+		36783C5B063CACC4CB66C966 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				442E6969B290CABD88DDC67A /* Pods_BingWallpaper.framework */,
+				7E7824848B9693C6153D4A89 /* Pods_BingWallpaperTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DBA623163B2F99480ACF8314 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0614D972D6F2B24983FEF6BE /* Pods-BingWallpaper.debug.xcconfig */,
+				86D460D10995C691FFF66330 /* Pods-BingWallpaper.release.xcconfig */,
+				9BCE9BDE716C8FE4AA4F3A19 /* Pods-BingWallpaperTests.debug.xcconfig */,
+				D8A9FE5B2F8ED9D5CFC39448 /* Pods-BingWallpaperTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,9 +179,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3290AED31CFF1A4000F2C945 /* Build configuration list for PBXNativeTarget "BingWallpaper" */;
 			buildPhases = (
+				D338E804D377AF644924DBC3 /* 📦 Check Pods Manifest.lock */,
 				3290AEAA1CFF1A4000F2C945 /* Sources */,
 				3290AEAB1CFF1A4000F2C945 /* Frameworks */,
 				3290AEAC1CFF1A4000F2C945 /* Resources */,
+				68E9FBC32943D142F98A30CD /* 📦 Embed Pods Frameworks */,
+				FD1DEC4E4458F64A06E2F631 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -146,9 +199,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3290AED61CFF1A4000F2C945 /* Build configuration list for PBXNativeTarget "BingWallpaperTests" */;
 			buildPhases = (
+				ABD5550BCFC0F06D5949CC2C /* 📦 Check Pods Manifest.lock */,
 				3290AEBB1CFF1A4000F2C945 /* Sources */,
 				3290AEBC1CFF1A4000F2C945 /* Frameworks */,
 				3290AEBD1CFF1A4000F2C945 /* Resources */,
+				349F088B126710F09D929317 /* 📦 Embed Pods Frameworks */,
+				605C02A485E68E361BD87E38 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -247,13 +303,112 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		349F088B126710F09D929317 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BingWallpaperTests/Pods-BingWallpaperTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		605C02A485E68E361BD87E38 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BingWallpaperTests/Pods-BingWallpaperTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68E9FBC32943D142F98A30CD /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BingWallpaper/Pods-BingWallpaper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ABD5550BCFC0F06D5949CC2C /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D338E804D377AF644924DBC3 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FD1DEC4E4458F64A06E2F631 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BingWallpaper/Pods-BingWallpaper-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3290AEAA1CFF1A4000F2C945 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3290AEE31CFF1BF200F2C945 /* DataFetcher.swift in Sources */,
+				3290AEE71CFF284C00F2C945 /* Log.swift in Sources */,
 				3290AEB41CFF1A4000F2C945 /* ViewController.swift in Sources */,
+				3290AEE41CFF1BF200F2C945 /* WallpaperInfo.swift in Sources */,
+				3290AEEF1CFF465E00F2C945 /* PreferenceViewController.swift in Sources */,
+				3290AEDD1CFF1AEB00F2C945 /* MainApp.swift in Sources */,
 				3290AEB21CFF1A4000F2C945 /* AppDelegate.swift in Sources */,
+				3290AEE21CFF1BF200F2C945 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,6 +539,7 @@
 		};
 		3290AED41CFF1A4000F2C945 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0614D972D6F2B24983FEF6BE /* Pods-BingWallpaper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -396,6 +552,7 @@
 		};
 		3290AED51CFF1A4000F2C945 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86D460D10995C691FFF66330 /* Pods-BingWallpaper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -408,6 +565,7 @@
 		};
 		3290AED71CFF1A4000F2C945 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BCE9BDE716C8FE4AA4F3A19 /* Pods-BingWallpaperTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -421,6 +579,7 @@
 		};
 		3290AED81CFF1A4000F2C945 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8A9FE5B2F8ED9D5CFC39448 /* Pods-BingWallpaperTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -475,6 +634,7 @@
 				3290AED51CFF1A4000F2C945 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3290AED61CFF1A4000F2C945 /* Build configuration list for PBXNativeTarget "BingWallpaperTests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +643,7 @@
 				3290AED81CFF1A4000F2C945 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3290AED91CFF1A4000F2C945 /* Build configuration list for PBXNativeTarget "BingWallpaperUITests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +652,7 @@
 				3290AEDB1CFF1A4000F2C945 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

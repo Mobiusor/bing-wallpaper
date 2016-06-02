@@ -1,0 +1,6 @@
+framework module Pods_BingWallpaperTests {
+  umbrella header "Pods-BingWallpaperTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
