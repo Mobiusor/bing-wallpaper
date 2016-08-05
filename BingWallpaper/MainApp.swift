@@ -61,14 +61,16 @@ class MainApp: NSObject, DataFetcherDelegate {
     
     
     func startTimer() {
-        let timer = NSTimer.scheduledTimerWithTimeInterval(3600 * 3, target: self, selector: #selector(fetchBingWallpaper), userInfo: nil, repeats: true)
+        let checkTime = NSUserDefaults.standardUserDefaults().integerForKey("checkTime") ?? 1
+        
+        let timer = NSTimer.scheduledTimerWithTimeInterval(3600 * CheckTime(rawValue: checkTime)!.timeInterval, target: self, selector: #selector(fetchBingWallpaper), userInfo: nil, repeats: true)
         timer.fire()
     }
     
     
     // MARK: - menu item actions
     @objc @IBAction func fetchBingWallpaper(sender: AnyObject) {
-        Log.sharedInstance.log.info("check if new bing wallpaper updated")
+        Log.sharedInstance.log.notice("check if new bing wallpaper updated")
         dataFetcher.fetchWallpaperInfoAsync()
     }
     
@@ -115,7 +117,7 @@ extension MainApp {
         
         
         imgData!.writeToFile(filePath, atomically: false)
-        Log.sharedInstance.log.info("image saved to local file: \(filePath)")
+        Log.sharedInstance.log.notice("image saved to local file: \(filePath)")
         
         // set wallpaper
         let storeUrl = NSURL(fileURLWithPath: filePath)
@@ -125,7 +127,7 @@ extension MainApp {
             try NSWorkspace.sharedWorkspace().setDesktopImageURL(storeUrl, forScreen: curScreen!, options: screenOptions!)
         } catch _ {
         }
-        Log.sharedInstance.log.info("image setted: \(filePath)")
+        Log.sharedInstance.log.notice("image setted: \(filePath)")
     }
     
     func imageInfoFetched(info: WallpaperInfo) {

@@ -14,7 +14,11 @@ public class Log {
     public let log: LXLogger
     
     private init() {
-        let logFile = LXFileEndpoint(fileURL: NSURL(string: "~/Documents/log/BingWallpaper/trace.log"), minimumPriorityLevel: .Notice)
+        let logFile = LXFileEndpoint(fileURL: NSURL(fileURLWithPath: Constants.logFilePath), minimumPriorityLevel: .All)
         log = LXLogger(endpoints: [LXConsoleEndpoint(), logFile])
+    }
+    
+    private func checkAndCreateLogFile() {
+        
     }
 }

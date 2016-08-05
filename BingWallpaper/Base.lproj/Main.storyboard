@@ -663,18 +663,18 @@
                 </windowController>
                 <customObject id="Dzd-j0-UNu" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="211" y="303"/>
+            <point key="canvasLocation" x="680" y="-18"/>
         </scene>
         <!--Preference View Controller-->
         <scene sceneID="cbv-Xt-tet">
             <objects>
                 <viewController id="yYw-1l-eBY" customClass="PreferenceViewController" customModule="BingWallpaper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="mdR-Rl-vGj">
-                        <rect key="frame" x="0.0" y="0.0" width="326" height="160"/>
+                        <rect key="frame" x="0.0" y="0.0" width="464" height="223"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="tow-TG-vou">
-                                <rect key="frame" x="117" y="23" width="92" height="32"/>
+                                <rect key="frame" x="186" y="23" width="92" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="1zu-Ub-Qcw"/>
                                     <constraint firstAttribute="width" constant="80" id="zyX-xz-HFb"/>
@@ -691,7 +691,7 @@ DQ
                                 </connections>
                             </button>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="TaR-5U-LNG">
-                                <rect key="frame" x="18" y="113" width="130" height="17"/>
+                                <rect key="frame" x="18" y="176" width="130" height="17"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Bing Wallpaper Path:" id="Gt2-Wg-vRn">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -699,7 +699,7 @@ DQ
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="f3x-41-vtu">
-                                <rect key="frame" x="155" y="104" width="129" height="32"/>
+                                <rect key="frame" x="155" y="167" width="129" height="32"/>
                                 <buttonCell key="cell" type="push" title="Choose Path..." bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ac5-7q-S6t">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -709,13 +709,75 @@ DQ
                                 </connections>
                             </button>
                             <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="ezF-k8-GKh">
-                                <rect key="frame" x="38" y="69" width="270" height="30"/>
+                                <rect key="frame" x="159" y="132" width="287" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="O8O-wT-CSu"/>
                                 </constraints>
                                 <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="[file path]" id="okA-Tv-MYP">
-                                    <font key="font" metaFont="system" size="12"/>
+                                    <font key="font" metaFont="cellTitle"/>
                                     <color key="textColor" name="tertiaryLabelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="yU0-lU-ENT">
+                                <rect key="frame" x="95" y="118" width="53" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Log file:" id="Zu4-uZ-JNz">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="siM-BR-CmJ">
+                                <rect key="frame" x="155" y="109" width="177" height="32"/>
+                                <buttonCell key="cell" type="push" title="Open Log file in Finder" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="QbS-tn-310">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="openLogFile:" target="yYw-1l-eBY" id="Ok7-Ve-jea"/>
+                                </connections>
+                            </button>
+                            <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="vaX-EH-xJx">
+                                <rect key="frame" x="159" y="81" width="85" height="26"/>
+                                <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="8sb-kX-1cv">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="menu"/>
+                                    <menu key="menu" id="HUi-Fc-96F">
+                                        <items>
+                                            <menuItem title="1 Day" id="naj-dc-cdl">
+                                                <connections>
+                                                    <action selector="selectCheckTime_1Day:" target="yYw-1l-eBY" id="Zl6-yD-z30"/>
+                                                </connections>
+                                            </menuItem>
+                                            <menuItem title="3 Hours" id="Ank-Mn-Na2">
+                                                <connections>
+                                                    <action selector="selectCheckTime_3Hours:" target="yYw-1l-eBY" id="lcb-PI-WbY"/>
+                                                </connections>
+                                            </menuItem>
+                                            <menuItem title="1 Hour" id="gmr-94-Nsb" userLabel="1 Hours">
+                                                <connections>
+                                                    <action selector="selectCheckTime_1Hour:" target="yYw-1l-eBY" id="idw-ZB-sZq"/>
+                                                </connections>
+                                            </menuItem>
+                                        </items>
+                                    </menu>
+                                </popUpButtonCell>
+                            </popUpButton>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Qus-Sb-roa">
+                                <rect key="frame" x="282" y="167" width="129" height="32"/>
+                                <buttonCell key="cell" type="push" title="Open in Finder" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="FFF-yX-zFu">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="openImageFolder:" target="yYw-1l-eBY" id="wvl-cW-oov"/>
+                                </connections>
+                            </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="rGb-Xw-Ihf">
+                                <rect key="frame" x="71" y="86" width="77" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Check time:" id="L0H-6v-Ydt">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
@@ -723,22 +785,59 @@ DQ
                         <constraints>
                             <constraint firstItem="TaR-5U-LNG" firstAttribute="top" secondItem="mdR-Rl-vGj" secondAttribute="top" constant="30" id="14t-hO-P3V"/>
                             <constraint firstItem="ezF-k8-GKh" firstAttribute="top" secondItem="TaR-5U-LNG" secondAttribute="bottom" constant="14" id="2fC-CA-RPn"/>
-                            <constraint firstItem="ezF-k8-GKh" firstAttribute="leading" secondItem="mdR-Rl-vGj" secondAttribute="leading" constant="40" id="6na-io-wj7"/>
+                            <constraint firstItem="rGb-Xw-Ihf" firstAttribute="top" secondItem="yU0-lU-ENT" secondAttribute="bottom" constant="15" id="82P-kt-mS4"/>
+                            <constraint firstItem="Qus-Sb-roa" firstAttribute="bottom" secondItem="f3x-41-vtu" secondAttribute="bottom" id="97x-ng-7NK"/>
+                            <constraint firstItem="rGb-Xw-Ihf" firstAttribute="trailing" secondItem="yU0-lU-ENT" secondAttribute="trailing" id="9R3-Kr-fs4"/>
                             <constraint firstItem="tow-TG-vou" firstAttribute="centerX" secondItem="mdR-Rl-vGj" secondAttribute="centerX" id="A5K-Mg-Y9t"/>
                             <constraint firstItem="f3x-41-vtu" firstAttribute="centerY" secondItem="TaR-5U-LNG" secondAttribute="centerY" id="BJa-YQ-iN0"/>
+                            <constraint firstItem="ezF-k8-GKh" firstAttribute="leading" secondItem="f3x-41-vtu" secondAttribute="leading" id="CL6-QT-umv"/>
                             <constraint firstItem="TaR-5U-LNG" firstAttribute="leading" secondItem="mdR-Rl-vGj" secondAttribute="leading" constant="20" id="Cl2-RS-nK1"/>
                             <constraint firstItem="f3x-41-vtu" firstAttribute="leading" secondItem="TaR-5U-LNG" secondAttribute="trailing" constant="15" id="KG5-I0-Xby"/>
+                            <constraint firstItem="vaX-EH-xJx" firstAttribute="leading" secondItem="siM-BR-CmJ" secondAttribute="leading" id="OM0-lU-LRl"/>
                             <constraint firstAttribute="bottom" secondItem="tow-TG-vou" secondAttribute="bottom" constant="30" id="Qrh-HU-xML"/>
+                            <constraint firstItem="Qus-Sb-roa" firstAttribute="leading" secondItem="f3x-41-vtu" secondAttribute="trailing" constant="10" id="XsW-Nd-YPC"/>
+                            <constraint firstItem="siM-BR-CmJ" firstAttribute="centerY" secondItem="yU0-lU-ENT" secondAttribute="centerY" id="c3f-FY-Okf"/>
+                            <constraint firstItem="vaX-EH-xJx" firstAttribute="centerY" secondItem="rGb-Xw-Ihf" secondAttribute="centerY" id="c5e-fO-fVQ"/>
+                            <constraint firstItem="siM-BR-CmJ" firstAttribute="leading" secondItem="f3x-41-vtu" secondAttribute="leading" id="da9-lQ-jjl"/>
+                            <constraint firstItem="yU0-lU-ENT" firstAttribute="top" secondItem="TaR-5U-LNG" secondAttribute="bottom" constant="41" id="jwy-st-gMt"/>
+                            <constraint firstItem="yU0-lU-ENT" firstAttribute="trailing" secondItem="TaR-5U-LNG" secondAttribute="trailing" id="tQa-tw-Tez"/>
                             <constraint firstAttribute="trailing" secondItem="ezF-k8-GKh" secondAttribute="trailing" constant="20" id="uxl-yV-h7w"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="popUpButton" destination="vaX-EH-xJx" id="eDj-Tw-dfI"/>
                         <outlet property="textFilePath" destination="ezF-k8-GKh" id="d0d-A8-G5f"/>
                     </connections>
                 </viewController>
                 <customObject id="nf4-K1-yYo" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="611" y="275"/>
+            <point key="canvasLocation" x="680" y="306.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="HWu-mV-zfz">
+            <objects>
+                <viewController id="byM-qV-lhg" sceneMemberID="viewController">
+                    <view key="view" id="nwv-QX-F4t">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </viewController>
+                <customObject id="Rm3-4b-5CE" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1184" y="368"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Vga-rH-GzH">
+            <objects>
+                <viewController id="k2n-vV-bWs" sceneMemberID="viewController">
+                    <view key="view" id="ANi-BB-OOH">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </viewController>
+                <customObject id="KY6-M7-3LR" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1184" y="729"/>
         </scene>
     </scenes>
 </document>
